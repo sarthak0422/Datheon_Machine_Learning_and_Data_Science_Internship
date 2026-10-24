@@ -72,6 +72,8 @@ Model performance should be interpreted using the recorded test-set results.
 
 **GitHub:** https://github.com/sarthak0422
 
+**Linkedin:** https://www.linkedin.com/in/sarthaktambde/
+
 ---
 
 Additional internship tasks will be documented in their respective folders as they are completed.
