@@ -111,10 +111,8 @@ Datheon_Machine_Learning_and_Data_Science_Internship/
 
 ### 1. Clone the Repository
 
-Replace the repository URL below with the URL of your actual GitHub repository.
-
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/sarthak0422/Datheon_Machine_Learning_and_Data_Science_Internship.git
 cd Datheon_Machine_Learning_and_Data_Science_Internship
 ```
 
