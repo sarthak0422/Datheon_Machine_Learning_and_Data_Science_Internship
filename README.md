@@ -2,17 +2,19 @@
 
 ## Overview
 
-This repository contains my project submissions for the Datheon Machine Learning & Data Science Internship.
+This repository contains my project submissions for the **Datheon Machine Learning & Data Science Internship**.
 
-The projects focus on data preprocessing, machine learning model development, evaluation, and visualization using Python and Scikit-Learn.
+The projects demonstrate practical applications of machine learning using Python, Pandas, NumPy, Matplotlib, Seaborn, and Scikit-Learn. They cover data exploration, preprocessing, feature engineering, model training, evaluation, and visualization.
 
-## Task 1: Multi-Class Benchmark Classification Pipeline
+## Projects
+
+### Task 1: Multi-Class Benchmark Classification Pipeline
 
 **Dataset:** Iris dataset
 
 **Objective:** Build and compare supervised classification models to predict flower species from their measurements.
 
-### Technologies Used
+#### Technologies Used
 
 - Python
 - Pandas and NumPy
@@ -20,60 +22,155 @@ The projects focus on data preprocessing, machine learning model development, ev
 - Matplotlib and Seaborn
 - Jupyter Notebook
 
-### Workflow
+#### Workflow
 
 1. Loaded and explored the Iris dataset.
 2. Performed exploratory data analysis using a Seaborn pairplot.
-3. Split the data into training and testing sets using an 80/20 ratio.
-4. Standardized the features using StandardScaler.
+3. Split the dataset into training and testing sets using an 80/20 ratio.
+4. Standardized numerical features using `StandardScaler`.
 5. Trained Logistic Regression and Decision Tree classifiers.
-6. Evaluated accuracy, macro precision, macro recall, and macro F1-score.
+6. Evaluated models using accuracy, macro precision, macro recall, and macro F1-score.
 7. Generated classification reports and confusion matrix heatmaps.
-8. Visualized two-feature decision boundaries.
+8. Visualized decision boundaries using two selected features.
 
-### Project Structure
+#### Key Learning Outcomes
+
+- Understanding supervised multi-class classification.
+- Exploring datasets and identifying feature relationships.
+- Applying feature scaling without data leakage.
+- Training and comparing classification algorithms.
+- Evaluating classification performance using multiple metrics.
+- Visualizing decision boundaries and confusion matrices.
+
+**Notebook:** `Task_1_Iris_Classification/iris_classification.ipynb`
+
+---
+
+### Task 2: Real Estate Housing Price Prediction — Ridge & Lasso Regression
+
+**Dataset:** California Housing dataset
+
+**Objective:** Predict median house values using regression algorithms and compare the performance of ordinary least squares, Ridge Regression, and Lasso Regression.
+
+#### Technologies Used
+
+- Python
+- Pandas and NumPy
+- Scikit-Learn
+- Matplotlib and Seaborn
+- Jupyter Notebook
+
+#### Workflow
+
+1. Loaded and explored the California Housing dataset.
+2. Examined dataset structure, descriptive statistics, missing values, and duplicate records.
+3. Visualized the target variable distribution and numerical feature correlations.
+4. Split the dataset into training and testing sets.
+5. Handled missing numerical and categorical values using imputation.
+6. Standardized numerical features and encoded categorical attributes using one-hot encoding.
+7. Engineered interaction features to explore relationships between predictors.
+8. Trained an ordinary least squares Linear Regression model.
+9. Used `GridSearchCV` with cross-validation to tune the regularization parameter (`alpha`) for Ridge and Lasso Regression.
+10. Compared models using Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R² score.
+11. Created actual-versus-predicted plots and residual analysis visualizations.
+12. Examined residual distributions to understand prediction errors.
+
+#### Key Learning Outcomes
+
+- Understanding continuous-value regression problems.
+- Performing data cleaning, imputation, and preprocessing.
+- Applying categorical encoding and feature scaling.
+- Engineering interaction features.
+- Understanding multicollinearity and the role of regularization.
+- Tuning model hyperparameters using cross-validation.
+- Comparing regression models using multiple evaluation metrics.
+- Interpreting prediction errors through residual analysis.
+
+**Notebook:** `Task_2_Housing_Price_Regression/housing_price_regression.ipynb`
+
+---
+
+## Repository Structure
 
 ```text
-Internship/
-└── Task_1_iris_classification/
-    └── iris_classification.ipynb
+Datheon_Machine_Learning_and_Data_Science_Internship/
+├── README.md
+├── Task_1_Iris_Classification/
+│   └── iris_classification.ipynb
+└── Task_2_Housing_Price_Regression/
+    └── housing_price_regression.ipynb
 ```
 
-### How to Run
+## Installation and Setup
 
-1. Clone or download this repository.
-2. Install the required libraries:
+### Prerequisites
 
-   `pip install pandas numpy matplotlib seaborn scikit-learn jupyter ipykernel`
+- Python 3.10 or later
+- Jupyter Notebook or Visual Studio Code with the Jupyter extension
+- An internet connection to download the datasets from their source URLs
 
-3. Open `iris_classification.ipynb` in Jupyter Notebook or VS Code.
-4. Run the notebook cells from top to bottom.
+### 1. Clone the Repository
 
-The notebook loads the Iris dataset from the supplied CSV URL, so an internet connection is required unless a local CSV copy is used.
+Replace the repository URL below with the URL of your actual GitHub repository.
 
-### Results
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd Datheon_Machine_Learning_and_Data_Science_Internship
+```
 
-The notebook contains the actual benchmark metrics, classification reports, confusion matrix heatmaps, and decision boundary visualizations.
+### 2. Install Dependencies
 
-Model performance should be interpreted using the recorded test-set results.
+```bash
+python -m pip install pandas numpy matplotlib seaborn scikit-learn jupyter ipykernel
+```
 
-## Learning Outcomes
+### 3. Open the Project
 
-- Understanding supervised multi-class classification
-- Data exploration and preprocessing
-- Avoiding data leakage during feature scaling
-- Training and comparing classification algorithms
-- Evaluating models with multiple classification metrics
-- Visualizing classification performance
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Alternatively, open the repository folder in Visual Studio Code and open either notebook.
+
+### 4. Run the Notebooks
+
+- Task 1: Open `Task_1_Iris_Classification/iris_classification.ipynb`.
+- Task 2: Open `Task_2_Housing_Price_Regression/housing_price_regression.ipynb`.
+
+Select the appropriate Python environment and execute the cells sequentially from top to bottom.
+
+## Results and Evaluation
+
+Each notebook contains its own evaluation results, visualizations, and observations.
+
+- **Task 1:** Classification metrics, classification reports, confusion matrices, and decision boundary plots.
+- **Task 2:** Regression metrics, cross-validation results, actual-versus-predicted plots, and residual analysis.
+
+The notebooks report the measured results obtained during execution. Model performance should be interpreted using the recorded test-set metrics rather than assumed or prefilled values.
+
+## General Learning Outcomes
+
+Through these projects, I have gained practical experience with:
+
+- Exploratory data analysis and data visualization.
+- Data preprocessing and feature engineering.
+- Supervised classification and regression.
+- Training and comparing machine learning models.
+- Model evaluation and performance interpretation.
+- Cross-validation and hyperparameter tuning.
+- Feature scaling, categorical encoding, and regularization.
+- Visualizing model predictions and errors.
 
 ## Author
 
 **Name:** Sarthak Suresh Tambde
 
-**GitHub:** https://github.com/sarthak0422
+**GitHub:** [sarthak0422](https://github.com/sarthak0422)
 
-**Linkedin:** https://www.linkedin.com/in/sarthaktambde/
+**LinkedIn:** [Sarthak Tambde](https://www.linkedin.com/in/sarthaktambde/)
 
 ---
 
-Additional internship tasks will be documented in their respective folders as they are completed.
+*Additional internship tasks will be documented in their respective folders as they are completed.*
